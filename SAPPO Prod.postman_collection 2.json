@@ -1,0 +1,617 @@
+{
+	"info": {
+		"_postman_id": "19aa11b1-8827-438c-a7b6-518ba0e975bf",
+		"name": "SAPPO Prod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29407916",
+		"_collection_link": "https://lively-space-468287.postman.co/workspace/MinSide-2.0~4c9f5ed3-dfab-44af-b012-4dab84d96a19/collection/19902097-19aa11b1-8827-438c-a7b6-518ba0e975bf?action=share&source=collection_link&creator=29407916"
+	},
+	"item": [
+		{
+			"name": "GetAnimalInformation",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getAnimalInformation?producer=3437021375&mainCategory=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getAnimalInformation"
+					],
+					"query": [
+						{
+							"key": "producer",
+							"value": "3437021375"
+						},
+						{
+							"key": "mainCategory",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAgreementTypes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getAnimalAgreementType?supplierId=50027394&companyCode=1006",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getAnimalAgreementType"
+					],
+					"query": [
+						{
+							"key": "supplierId",
+							"value": "50027394"
+						},
+						{
+							"key": "companyCode",
+							"value": "1006"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProducerInfo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getproducerinfo?producer=1119023222",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getproducerinfo"
+					],
+					"query": [
+						{
+							"key": "producer",
+							"value": "1119023222"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get enrollment orderlines",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/enrollmentorderlines?supplierId=50003196&company=1006",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"enrollmentorderlines"
+					],
+					"query": [
+						{
+							"key": "supplierId",
+							"value": "50003196"
+						},
+						{
+							"key": "company",
+							"value": "1006"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get suppliers for ring leader",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/getSuppliersForRingLeader?supplierNumber=50023603",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getSuppliersForRingLeader"
+					],
+					"query": [
+						{
+							"key": "supplierNumber",
+							"value": "50023603"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ring leader for supplier",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/getRingLeaderForSuppliers?supplierNumber=50023603",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getRingLeaderForSuppliers"
+					],
+					"query": [
+						{
+							"key": "supplierNumber",
+							"value": "50023603"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTKKMembership",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getTKK?originmarking=274697301335",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getTKK"
+					],
+					"query": [
+						{
+							"key": "originmarking",
+							"value": "274697301335"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSFKKMembership",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getStorfeKK?fodselsprodnr=05110152&fodselsindividnr=0391&fodselsaar=2012",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getStorfeKK"
+					],
+					"query": [
+						{
+							"key": "fodselsprodnr",
+							"value": "05110152",
+							"description": "051101520391"
+						},
+						{
+							"key": "fodselsindividnr",
+							"value": "0391"
+						},
+						{
+							"key": "fodselsaar",
+							"value": "2012"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSalesDocument",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<SalesDocumentList_Request>  \r\n  <CreatedDateFrom>20221001</CreatedDateFrom>\r\n  <CreatedDateTo>20221012</CreatedDateTo>\r\n  <Vendor>50018405</Vendor>\r\n</SalesDocumentList_Request>",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/getSalesDocument",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getSalesDocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Ingris Besetning",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getIngrisBesetning?vendornumber=1160054639",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getIngrisBesetning"
+					],
+					"query": [
+						{
+							"key": "vendornumber",
+							"value": "1160054639"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Ingris Livdyr",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getIngrisLivDyr?vendornumber=5038013719&salesdatefrom=20240113",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getIngrisLivDyr"
+					],
+					"query": [
+						{
+							"key": "vendornumber",
+							"value": "5038013719"
+						},
+						{
+							"key": "salesdatefrom",
+							"value": "20240113"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetInsertPlans",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getInsertPlan?producer=3437021375&supplierId=50016854&startDate=20230101",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getInsertPlan"
+					],
+					"query": [
+						{
+							"key": "producer",
+							"value": "3437021375"
+						},
+						{
+							"key": "mainCategory",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "supplierId",
+							"value": "50016854"
+						},
+						{
+							"key": "startDate",
+							"value": "20230101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetActivity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/inserts/activities?ProducerNumber=3417051244",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"",
+						"inserts",
+						"activities"
+					],
+					"query": [
+						{
+							"key": "mainCategory",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "ProducerNumber",
+							"value": "3417051244"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAnimalHusbandries",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "7567301dfb3343bbbc525053f2e9b184",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sap-Authorization",
+						"value": "tSZIhSgfWlC4VJtWuv8nh6taRLZdX97ZA1Ut8m2uDMwi2O2IGpnog7Wbka",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getAnimalHusbandry?producer=3437021375",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getAnimalHusbandry"
+					],
+					"query": [
+						{
+							"key": "producer",
+							"value": "3437021375"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "JM4AMJqDXnmuFaSX",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "EdJyYTeQwsQwMsbslblL3owwOncMyxXh",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://nortura.prod.apimanagement.eu20.hana.ondemand.com/OAuthService/GenerateToken",
+				"type": "string"
+			},
+			{
+				"key": "tokenType",
+				"value": "BearerToken",
+				"type": "string"
+			},
+			{
+				"key": "accessToken",
+				"value": "Z8rHssjbVSxxksaxg6cfYv3NFPsI",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "SAP APIM",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://nortura.prod.apimanagement.eu20.hana.ondemand.com/",
+			"type": "string"
+		}
+	]
+}
